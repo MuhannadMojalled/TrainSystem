@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dcae4625-d578-4db7-a277-bdbb34ab09ff" name="Changes" comment="">
+    <list default="true" id="dcae4625-d578-4db7-a277-bdbb34ab09ff" name="Changes" comment="adding train numbers">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ReservationSystemSingleton.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ReservationSystemSingleton.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/TrainObserver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainObserver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/TrainReservationMainApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/TrainReservationMainApp.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,8 +71,17 @@
       <updated>1716637635723</updated>
       <workItem from="1716637636981" duration="2000" />
       <workItem from="1716675087917" duration="1307000" />
-      <workItem from="1716676871992" duration="2062000" />
+      <workItem from="1716676871992" duration="3155000" />
     </task>
+    <task id="LOCAL-00001" summary="adding train numbers">
+      <option name="closed" value="true" />
+      <created>1716679641975</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1716679641975</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -87,5 +97,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="adding train numbers" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding train numbers" />
   </component>
 </project>

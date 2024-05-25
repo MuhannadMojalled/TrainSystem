@@ -7,10 +7,10 @@ public class ReservationSystemSingleton {
 
     private ReservationSystemSingleton() {
         //Initialize with some trains
-        trains.add(new Train("Train1","1", 50));
-        trains.add(new Train("Train2","2", 80));
-        trains.add(new Train("Train3","3", 80));
-        trains.add(new Train("Train4","4", 80));
+        trains.add(new Train("Train1","1"," Jeddah ---> Riyadh", 50));
+        trains.add(new Train("Train2","2"," Riyadh ---> Jeddah", 80));
+        trains.add(new Train("Train3","3"," Mecca  ---> Jeddah",80));
+        trains.add(new Train("Train4","4"," Jeddah ---> Mecca",80));
     }
 
     public static synchronized ReservationSystemSingleton getInstance() {

@@ -18,7 +18,7 @@ public class TrainReservationMainApp {
             System.out.println("Welcome to Train Reservation System");
             System.out.println("Available Trains:");
             for (Train train : system.getTrains()) {
-                System.out.println(train.getName() + " currently has: " + train.getAvailableSeats() +" seats available");
+                System.out.println(train.getNumber() +": "+train.getDist() +", currently has: " + train.getAvailableSeats() +" seats available");
             }
 
             BookingContext context = new BookingContext();
