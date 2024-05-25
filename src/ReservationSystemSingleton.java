@@ -7,8 +7,10 @@ public class ReservationSystemSingleton {
 
     private ReservationSystemSingleton() {
         //Initialize with some trains
-        trains.add(new Train("Train1", 100));
-        trains.add(new Train("Train2", 150));
+        trains.add(new Train("Train1","1", 50));
+        trains.add(new Train("Train2","2", 80));
+        trains.add(new Train("Train3","3", 80));
+        trains.add(new Train("Train4","4", 80));
     }
 
     public static synchronized ReservationSystemSingleton getInstance() {
@@ -24,7 +26,7 @@ public class ReservationSystemSingleton {
 
     public Ticket bookTicket(String trainName, String ticketType) {
         for (Train train : trains) {
-            if (train.getName().equals(trainName) && train.getAvailableSeats() > 0) {
+            if ((train.getName().equalsIgnoreCase(trainName)||(train.getNumber().equalsIgnoreCase(trainName)))&& train.getAvailableSeats() > 0) {
                 Ticket ticket = TicketFactory.createTicket(ticketType);
                 train.bookSeat();
                 return ticket;

@@ -3,17 +3,21 @@ import java.util.List;
 
 class Train {
     private String name;
+    private String number;
     private int availableSeats;
     private List<Observer> observers = new ArrayList<>();
 
-    public Train(String name, int availableSeats) {
+    public Train(String name, String number, int availableSeats) {
         this.name = name;
+        this.number = number;
         this.availableSeats = availableSeats;
     }
 
     public String getName() {
         return name;
     }
+
+    public String getNumber() {return number;}
 
     public int getAvailableSeats() {
         return availableSeats;
