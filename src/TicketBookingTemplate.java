@@ -31,18 +31,17 @@ class StandardBooking extends TicketBookingTemplate {
 
     @Override
     protected void selectTrain() {
-        System.out.print("Enter the train number you want to book. Train NUM: ");
+        System.out.print("Enter the train number you want to book (or 'exit' to exit): ");
         trainNum = scanner.nextLine();
-        System.out.println(trains.get(Integer.valueOf(trainNum)).getAvailableSeats());
         while (true) {
             if ((trainNum.equals("1") || trainNum.equals("2") || trainNum.equals("3") || trainNum.equals("4"))) {
                 if (trains.get(Integer.valueOf(trainNum)-1).getAvailableSeats() > 0) {
                     break;
                 }
             }
-            System.out.print("Please enter a valid train number with avalible seats! (1/2/3/4) If all seats are full, write 'full' to exit: ");
+            System.out.print("Please enter a valid train number with avalible seats! (1/2/3/4) If all seats are full or you want to exit, write 'exit' to exit: ");
             trainNum = scanner.nextLine();
-            if (trainNum.equals("full")) {
+            if (trainNum.equalsIgnoreCase("exit")) {
                 System.out.println("Thank you for using our train reservation system!");
                 System.exit(0);
             }
