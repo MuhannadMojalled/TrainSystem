@@ -1,5 +1,7 @@
 import java.util.Scanner;
 
+// Main file
+
 public class TrainReservationMainApp {
     public static void main(String[] args) {
         ReservationSystemSingleton system = ReservationSystemSingleton.getInstance();
